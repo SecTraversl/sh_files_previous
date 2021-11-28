@@ -1,0 +1,77 @@
+{
+	"Header 1": {
+		"prefix": "header-1",
+		"body": [
+			"################################",
+			"# $1",
+			"",
+			"$2"
+		],
+		"description": "Header 1"
+	},
+	"Header 2": {
+		"prefix": "header-2",
+		"body": [
+			"############################################",
+			"$1"
+		],
+		"description": "Header 2"
+	},
+	"Header Block": {
+		"prefix": "header-block",
+		"body": [
+			"#########################################################################",
+			"#########################################################################",
+			"#########################################################################",
+			"",
+			"$1"
+		],
+		"description": "Header Block"
+	},
+	"Comment MultiLine": {
+		"prefix": "comment-multiline",
+		"body": [
+			"<< '#comment'",
+			"$1",
+			"#comment",
+			"$2"
+		],
+		"description": "Comment MultiLine"
+	},
+	"Comment Help Updated": {
+		"prefix": "comment-help-updated",
+		"body": [
+			"#!/bin/bash",
+			"",
+			"############################################",
+			"# SYNOPSIS",
+			"# - The \"$1\" function $2",
+			"#",
+			"###########",
+			"# NOTES",
+			"# - Name:  $3.sh",
+			"# - Author:  Travis Logue",
+			"# - Version History:  1.1 | Initial Version",
+			"# - Dependencies:  ",
+			"# - Notes:",
+			"#   - ",
+			"#",
+			"###########",
+			"# EXAMPLE",
+			"<< '#comment'",
+			"$4",
+			"#comment",
+			"############################################",
+		],
+		"description": "Comment Help Updated"
+	},
+	"Comment Example Note": {
+		"prefix": "comment-example-note",
+		"body": [
+			"# ... Here we ${1:show the normal output} ...",
+			"",
+			"$2"
+		],
+		"description": "Comment Example Note"
+	}
+}
