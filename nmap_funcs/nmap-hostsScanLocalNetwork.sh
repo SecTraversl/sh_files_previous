@@ -35,7 +35,7 @@ Nmap done: 256 IP addresses (4 hosts up) scanned in 1.95 seconds
 
 function nmap-hostsScanLocalNetwork () {
   # First we get the IPs on our systems + CIDR notation
-  IPs=$(ip address | grep "inet " | tr -s ' ' | cut -d ' ' -f3)
+  local IPs=$(ip address | grep "inet " | tr -s ' ' | cut -d ' ' -f3)
   # We loop over those, and if any are NOT 127.0.0.1*, then we do an NMAP hosts scan for that network
   for item in `echo "$IPs"`; do
     if [[ "$item" != 127.0.0.1* ]]; then
