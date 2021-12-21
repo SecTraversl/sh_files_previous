@@ -3,7 +3,7 @@
 ################################
 # We change to a specific directory for the execution in the next section
 
-cd ~/sh_files
+cd ~/Temp/sh_files
 
 
 ################################
@@ -42,9 +42,10 @@ cd ~/sh_files
 . ./files-and-folders_funcs/sort-filesByTimestamp.sh
 . ./files-and-folders_funcs/sort-filesByTimestampDirectoriesOnly.sh
 . ./files-and-folders_funcs/sort-filesByTimestampIncludeDirectories.sh
-. ./files-and-folders_funcs/sort-filesBySizeRecursively.sh
+. ./files-and-folders_funcs/sort-filesByTimestampRecursively.sh
 . ./files-and-folders_funcs/sort-filesByTimestampTrimOutput.sh
 . ./function_funcs/get-myfunctions.sh
+. ./function_funcs/get-myfunctionsParentDirAndFileOnly.sh
 . ./history_funcs/get-history.sh
 . ./networking_funcs/get-ipaddress.sh
 . ./networking_funcs/get-ipaddress6.sh
@@ -70,10 +71,14 @@ cd ~/sh_files
 . ./user-and-group_funcs/get-usersListAll.sh
 . ./user-and-group_funcs/new-group.sh
 . ./user-and-group_funcs/remove-groupMember.sh
+. ./variables-and-env_funcs/add-pathAppend.sh
+. ./variables-and-env_funcs/add-pathPrepend.sh
+. ./variables-and-env_funcs/get-path.sh
+. ./variables-and-env_funcs/reset-environment.sh
 
 
 ################################
-# We change to back to the original directory prior to the above execution
+# Then we change back to the original directory prior to the above execution
 
 cd - 1>/dev/null
 
