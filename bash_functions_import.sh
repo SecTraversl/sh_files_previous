@@ -11,7 +11,7 @@
 ################################
 # We change to a specific directory for the execution in the next section
 
-cd ~/Temp/sh_files
+cd ~/Documents/Temp/sh_files
 
 
 ################################
