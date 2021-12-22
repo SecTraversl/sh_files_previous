@@ -1,6 +1,14 @@
 #!/bin/bash
 
 ################################
+# The setup for installation of the tools on a new system:
+
+# mkdir -p ~/Documents/Temp
+# cd ~/Documents/Temp
+# git clone https://github.com/SecTraversl/sh_files.git
+
+
+################################
 # We change to a specific directory for the execution in the next section
 
 cd ~/Temp/sh_files
@@ -74,6 +82,7 @@ cd ~/Temp/sh_files
 . ./variables-and-env_funcs/add-pathAppend.sh
 . ./variables-and-env_funcs/add-pathPrepend.sh
 . ./variables-and-env_funcs/get-path.sh
+. ./variables-and-env_funcs/get-variablesInProfileFiles.sh
 . ./variables-and-env_funcs/reset-environment.sh
 
 
